@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab1;
+package lab2;
 
 /**
  *
@@ -11,11 +11,11 @@ package lab1;
  */
 public class Startup {
     public static void main(String[] args) {
-        Course p1 = new IntroToProgrammingCourse("Intro to Programming", "152-107", 2);
-        Course p2 = new IntroJavaCourse("Intro to Java", "152-134", 4, "Intro to Programming");
-        Course p3 = new AdvancedJavaCourse("Advanced Java", "152-135", 4, "Intro to Java");
+        Course p1 = new IntroToProgrammingCourse("Intro to Programming", "152-107");
+        Course p2 = new IntroJavaCourse("Intro to Java", "152-134");
+        Course p3 = new AdvancedJavaCourse("Advanced Java", "152-135");
         
-        System.out.println(p3.getCredits());
+        System.out.println(p3.getCourseName());
         System.out.println(p1.getCredits());
     }
 }

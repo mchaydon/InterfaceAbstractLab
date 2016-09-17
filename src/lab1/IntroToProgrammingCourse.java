@@ -9,20 +9,25 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroToProgrammingCourse extends ProgrammingCourse{
-    private String courseName;
-    private String courseNumber;
-    private double credits;
+public class IntroToProgrammingCourse extends Course{
 
-    public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+    public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
+        setCredits(credits);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
+    @Override
+    public final void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: credits must be in the range 0.5 to 4.0");
+            System.exit(0);
+        }
+        this.credits = credits;
     }
 
+    @Override
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -32,23 +37,7 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         this.courseNumber = courseNumber;
     }
 
-    public double getCredits() {
-        return credits;
-    }
-
-    public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: credits must be in the range 0.5 to 4.0");
-            System.exit(0);
-        }
-        this.credits = credits;
-    }
-
-    public String getCourseName() {
-        return courseName;
-    }
-
+    @Override
     public final void setCourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
@@ -57,6 +46,4 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
         }
         this.courseName = courseName;
     }
-
-    
 }
