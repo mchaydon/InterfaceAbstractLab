@@ -26,3 +26,5 @@ public class Startup {
 //This method words well if you want all objects to have the same properties and methods.
 //However, I do not like that I can not call the methods that just the classes have when calling them by their 
 //parent class datatype.
+//I suppose this would be when calling a object by it's parent class would not be advantageous? 
+//But calling the object by it's parent class does allow us to substitute other types of this object.

@@ -23,7 +23,7 @@ public class Startup {
     }
 }
 
-//This method appears to be a bit easier to work with. Nothing is implied so there is no trying to remember
-//which classes had which things inherited automatically. 
-//However I am again unable to call for instance p3.getPrerequistes. Is there any way to call these when using
+//This method appears to be a bit easier to work with. Nothing is forced to be a property or method in the children
+//so there is no trying to remember which classes had which things inherited automatically. 
+//However I am again unable to call for instance p3.getPrerequisites(). Is there any way to call these when using
 //the parent datatype that does not have these methods defined?

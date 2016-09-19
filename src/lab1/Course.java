@@ -15,7 +15,9 @@ public abstract class Course {
     public double credits;
        
     public abstract void setCredits(double credits);
-    public abstract void setCourseNumber(String courseNumber);
+    public void setCourseNumber(String courseNumber){
+        this.courseNumber = courseNumber;
+    };
     public abstract void setCourseName(String courseName);
     
     public final String getCourseName() {
