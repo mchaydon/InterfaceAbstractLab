@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends Course{
-    public String courseName;
-    public String courseNumber;
-    public double credits;
+    private String courseName;
+    private String courseNumber;
+    private double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
         setCourseName(courseName);

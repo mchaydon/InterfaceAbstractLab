@@ -7,9 +7,9 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends Course{
-    public String courseName;
-    public String courseNumber;
-    public double credits;
+    private String courseName;
+    private String courseNumber;
+    private double credits;
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
