@@ -9,6 +9,9 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse extends Course{
+    public String courseName;
+    public String courseNumber;
+    public double credits;
     private String prerequisites;
 
     public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
@@ -53,6 +56,21 @@ public class AdvancedJavaCourse extends Course{
             System.exit(0);
         }
         this.credits = credits;
+    }
+    
+    @Override
+    public String getCourseName() {
+        return courseName;
+    }
+
+    @Override
+    public String getCourseNumber() {
+        return courseNumber;
+    }
+
+    @Override
+    public double getCredits() {
+        return credits;
     }
     
 }

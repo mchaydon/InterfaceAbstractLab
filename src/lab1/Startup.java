@@ -19,7 +19,6 @@ public class Startup {
         System.out.printf("%s\t%s\t\t%f\n", p1.getCourseName(), p1.getCourseNumber(), p1.getCredits());
         System.out.printf("%s\t\t%s\t\t%f\n", p2.getCourseName(), p2.getCourseNumber(), p2.getCredits());
         System.out.printf("%s\t\t%s\t\t%f\n", p3.getCourseName(), p2.getCourseNumber(), p3.getCredits());
-        
     }
 }
 

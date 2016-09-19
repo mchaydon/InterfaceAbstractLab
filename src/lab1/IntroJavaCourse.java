@@ -7,6 +7,9 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends Course{
+    public String courseName;
+    public String courseNumber;
+    public double credits;
     private String prerequisites;
 
     public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
@@ -15,7 +18,6 @@ public class IntroJavaCourse extends Course{
         setCredits(credits);
         setPrerequisites(prerequisites);
     }
-
 
     @Override
     public final void setCourseNumber(String courseNumber) {
@@ -43,6 +45,21 @@ public class IntroJavaCourse extends Course{
     @Override
     public final void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+    
+    @Override
+    public String getCourseName() {
+        return courseName;
+    }
+
+    @Override
+    public String getCourseNumber() {
+        return courseNumber;
+    }
+
+    @Override
+    public double getCredits() {
+        return credits;
     }
 
 }

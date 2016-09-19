@@ -10,6 +10,9 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroToProgrammingCourse extends Course{
+    public String courseName;
+    public String courseNumber;
+    public double credits;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber, double credits) {
         setCourseName(courseName);
@@ -45,5 +48,20 @@ public class IntroToProgrammingCourse extends Course{
             System.exit(0);
         }
         this.courseName = courseName;
+    }
+
+    @Override
+    public String getCourseName() {
+        return courseName;
+    }
+
+    @Override
+    public String getCourseNumber() {
+        return courseNumber;
+    }
+
+    @Override
+    public double getCredits() {
+        return credits;
     }
 }

@@ -9,24 +9,14 @@ package lab1;
  *
  * @author Mike
  */
-public abstract class Course {
-    public String courseName;
-    public String courseNumber;
-    public double credits;
-       
+public abstract class Course {       
     public abstract void setCredits(double credits);
     public abstract void setCourseNumber(String courseNumber);
     public abstract void setCourseName(String courseName);
     
-    public final String getCourseName() {
-        return courseName;
-    }
+    public abstract String getCourseName();
     
-    public final String getCourseNumber() {
-        return courseNumber;
-    }
+    public abstract String getCourseNumber();
     
-    public final double getCredits() {
-        return credits;
-    }
+    public abstract double getCredits();
 }
